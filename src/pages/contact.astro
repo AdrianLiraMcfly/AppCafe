@@ -1,0 +1,58 @@
+---
+import DefaultLayout from '../layouts/DefaultLayout.astro';
+---
+
+<DefaultLayout title="Contáctanos">
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <h1 class="text-center mb-4">Contáctanos</h1>
+        <form action="/send" method="POST" class="needs-validation" novalidate>
+          <div class="mb-3">
+            <label for="name" class="form-label">Nombre:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form-control"
+              placeholder="Escribe tu nombre"
+              required
+            />
+            <div class="invalid-feedback">Por favor, escribe tu nombre.</div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo Electrónico:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              placeholder="correo@ejemplo.com"
+              required
+            />
+            <div class="invalid-feedback">
+              Por favor, introduce un correo electrónico válido.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Mensaje:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              class="form-control"
+              placeholder="Escribe tu mensaje aquí"
+              required
+            ></textarea>
+            <div class="invalid-feedback">
+              Por favor, escribe un mensaje.
+            </div>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</DefaultLayout>

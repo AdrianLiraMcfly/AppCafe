@@ -1,0 +1,35 @@
+@import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+:root{
+    --primary-color: #6f4e37; /* Color café */
+    --secondary-color: #d7a561; /* Color crema */
+    --background-color: #f4f4f4; /* Fondo */
+    --text-color: #333; /* Texto */
+}
+
+body{
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.container {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #6c757d;
+  }
+  
+  .btn-primary {
+    background-color: #6f4e37;
+    border-color: #6f4e37;
+  }
+  
+  .btn-primary:hover {
+    background-color: #563c28;
+  }
+  
