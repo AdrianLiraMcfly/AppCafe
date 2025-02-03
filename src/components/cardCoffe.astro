@@ -1,19 +1,14 @@
 ---
 const { image, name, description, price } = Astro.props;
 ---
-<html>
-    <body>
-        <div class="card mb-4 shadow-sm fixed-size-card">
-            <img src={image} class="card-img-top fixed-size-img" alt={name} />
-            <div class="card-body">
-                <h5 class="card-title">{name}</h5>
-                <p class="card-text">{description}</p>
-                <p class="card-text"><strong>{price}</strong></p>
-                
-            </div>
-        </div>
-    </body>
-</html>
+<div class="card mb-4 shadow-sm fixed-size-card">
+    <img src={image} class="card-img-top fixed-size-img" alt={name} />
+    <div class="card-body">
+        <h2 class="card-title">{name}</h2>
+        <p class="card-text">{description}</p>
+        <p class="card-text"><strong>{price}</strong></p>
+    </div>
+</div>
 
 <style>
     .fixed-size-img {
